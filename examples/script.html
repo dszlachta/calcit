@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <head>
+        <title>CalcIt example: Script</title>
+        <script src="../dist/calcit.js"></script>
+    </head>
+
+    <body>
+        <h1>Script example</h1>
+
+        <p>
+            Using CalcIt from a <code>script</code> tag.
+        </p>
+
+        <table>
+            <caption>Shopping costs, August</caption>
+            <thead>
+                <tr>
+                    <th>Food</th>
+                    <th>Clothes</th>
+                    <th>Beer</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>10</td>
+                    <td>50</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>0</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>10</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="totalFood"></div>
+        <div id="totalClothes"></div>
+        <div id="totalBeer"></div>
+
+        <script type="text/javascript">
+         const totalFood = CalcIt.evaluate(`sum(...selectorsToValues(['tbody tr td:first-of-type']))`);
+
+         document.querySelector('#totalFood').textContent = `Total for food: ${totalFood}`;
+        </script>
+    </body>
+</html>

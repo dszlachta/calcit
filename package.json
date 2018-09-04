@@ -1,0 +1,24 @@
+{
+  "name": "calc-it",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/calcit.js",
+  "module": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "serve": "serve",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.4.2",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.5.0",
+    "jsdom": "^12.0.0",
+    "serve": "^10.0.0",
+    "webpack": "^4.17.1",
+    "webpack-command": "^0.4.1"
+  }
+}

@@ -1,13 +1,11 @@
 CalcIt
 ======
 
-CalcIt adds some spreadsheet-like powers to static websites.
-It can be used as a JavaScript library or as a WebComponent.
+Write spreadsheet-like formulae that take values from DOM nodes.
+It can be used as any other JavaScript library or as a web component.
 
-Using it you can write a "formulae" composed from `functions` and use
-DOM nodes as an input and selectors to create a range of values.
-
-Please see `examples/` and `src/functions/`.
+Please see `examples/` for how to use CalcIt and `src/functions/` for
+predefined functions that can be used in a formula.
 
 Getting node values
 -------------------
@@ -24,7 +22,7 @@ Sequences
 
 A `seq` can be used to generate a sequence of numbers in ascending, as well as
 descending order. If numbers are prefixed, the prefix will be present also in
-the generated output.
+the generated output. That way you can use `seq` to build a sequence of selectors.
 
 ```
 seq(1, 5) // 1, 2, 3, 4, 5
